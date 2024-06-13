@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../media/photos/pexels-olly-783243.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.hero nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero nav ul  li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.hero nav ul li a{
+    text-decoration: none;
+    color: #59331D;
+    font-weight: bold;
+}
+.hero nav ul li a:hover{
+    color: #912d0f;
+}
+.detal{
+    margin-left: 8%;
+    margin-top: 1%;
+}
+.detal h1{
+    font-size: 50px;
+    color:#260101;
+    margin-bottom: 10%;
+
+}
+span{
+    color:#9C3E00 ;
+}
+.detal p{
+    margin-top: 300px;
+    
+    color: #502000;
+    line-height: 22px;
+
+}
+.detal a{
+    background: #FF7A48;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#151F30 ;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 12px;
+}

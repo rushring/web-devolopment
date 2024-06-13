@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+:root{
+    --dblue:#171332;
+    --blue:#120f25;
+    --white:#EEEEEE;
+    --green:#4AE3B5;
+    --longtext:#478b99;
+
+    --h1:7rem;
+    --h2:3.5rem;
+    --p:1.1rem;
+}
+body{
+    color: var(--white);
+    background: var(--dblue);
+}
+
+header nav{
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background:transparent;
+    padding: 3% 11%;
+    border-bottom:1px solid transparent ; 
+}
+header nav a{
+   color: var(--white);
+   font-size:var(--p);
+   font-weight: 600;
+   margin: 0 40px;
+}
+header nav a:hover{
+    color: var(--green);
+}
+.back{
+    position: fixed;
+    right: .7rem;
+    bottom: 1.2rem;
+}
+.back a i{
+    color:rgb(4, 20, 20); 
+    background: var(--green);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.back a i:hover{
+    color: var(--green);
+    background: transparent;
+}
+section{
+    padding: 100px 5% 100px;
+    min-width: 280px;
+}
+.home{
+    position: relative;
+    min-height: 100vh;
+    min-width: 280px;
+    width: 100%;
+    background: url(../media/photos/girl.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex ;
+    align-items: center;
+    justify-content: flex-start;
+}
+.description h3{
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;    
+}
+.description h1{
+    color: #15F5BA;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+.description h4{
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+    word-spacing: 15px;  
+}
+.description span{
+    color: var(--white);
+}
+.btn{
+    display: inline-block;
+    padding: 16px 35px;
+    background: var(--green);
+    color:rgb(4, 20, 20); 
+    font-size: var(--p); 
+    font-weight: 600;
+    border-radius: 12px; 
+    border: 2px solid var(--dblue);
+}
+.btn:hover{
+     background: transparent;
+    border: 2px solid transparent;
+    color:var(--green) ;
+    border: none;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 4rem;
+    padding: 120px 7% 100px;
+} 
+.mypic img{
+    width: 100%;
+     height: auto;
+}
+.abouttext h2{
+    font-size: var(--h2);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.abouttext h5{
+    font-size: 1.5em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.abouttext span{
+    color: #15F5BA;
+       margin-bottom: 10px; */
+}
+.abouttext p{
+    color:var(--longtext);
+    font-size: var(--p);
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+.servicecontainer{
+    background: var(--blue);
+}
+.servicetext{
+    text-align: center;
+}
+.servicetext h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.servicetext h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: stretch;
+    gap: 2.2rem;
+    text-align: center;
+    margin-top: 4rem;
+
+}
+.servicebox{
+    padding: 45px 30px;
+    background: var(--dblue);
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    box-shadow: 0.3rem 0.3rem 1.2rem rgba(0,0,0, 0.2);
+}
+.servicebox  i{
+    font-size: 50px;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+.servicebox h3{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--green);
+}
+.servicebox p{
+    color:#478b99 ;
+    font-size: var(--p);
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+ .skills{
+    background: var(--blue);
+ }
+ .skills .title{
+    font-size: var(--h2);
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+ }
+ .skills-container{
+    margin: auto;
+    padding: 1.2rem 1.7rem;
+    max-width: 65vw;
+    min-width: 250px;
+    background: var(--dblue);
+    border-radius: 0.7rem;
+    box-shadow: 0.3rem 0.3rem 1.2rem rgba(0,0,0, 0.2);
+ }
+ .skills-container .bar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 33px;
+    gap: 12px;
+    justify-content: space-around;
+ }
+ .skills-container .bar .info{
+    flex: 2;
+    min-width: 120px;
+    line-height:0.8rem ;
+    font-size: 23px;
+    font-weight: 700;
+ }
+ .skills-container .bar .line{
+    flex: 8;
+    min-width: 150px;
+    box-shadow: 0.3rem 0.3rem 1.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+    height: 0.8rem;
+ }
+ .skills-container .bar .c {
+    background: linear-gradient(to  right, #4AE3B5 50%,#171332 50% );
+ }
+ .skills-container .bar .html {
+    background: linear-gradient(to  right, #4AE3B5 95%,#171332 95%);
+ }
+ .skills-container .bar .js {
+    background: linear-gradient(to  right, #4AE3B5 25%,#171332 25% );
+ }
+ .skills-container .bar .mysql {
+    background: linear-gradient(to  right, #4AE3B5 35%,#171332 35% );
+ }
+ .skills-container .bar .java {
+    background: linear-gradient(to  right, #4AE3B5 70%,#171332 70%);
+ }
+ .skills-container .bar .css {
+    background: linear-gradient(to  right, #4AE3B5 90%,#171332 90%);
+ }
+
+ .resume {
+    background: var(--blue);
+}
+
+.educontainer h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.education{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    align-items: stretch;
+    justify-content: left;
+    gap: 4rem;
+}
+.edu{
+    padding: 45px 30px;
+    background: var(--dblue);
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+    box-shadow: 0.3rem 0.3rem 1.2rem rgba(0,0,0, 0.2);
+}
+.edu h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--green);
+}
+.edu address{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.edu p{
+    color:#478b99;
+    font-size: 1em;
+    line-height: 25px;
+    margin-bottom: 3rem;
+}
+
+.hobby{
+    background: var(--blue);
+} 
+.hobbyhead h2{
+    font-size: var(--h2);
+    font-weight: 800;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.hby{
+    display: grid; grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    align-items: stretch;
+    text-align: center;
+    gap: 4rem;
+}
+
+.in i{
+    color: #15F5BA;
+    opacity: 0.6;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.in i:hover{
+    opacity: 1;
+}
+.in h4{
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.goalhead h2{
+    font-size: var(--h2);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.g1{
+    padding: 50px 15% 0 ;
+    color:var(--longtext);
+    font-size: var(--p);
+    line-height: 35px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.g1 p span{
+    color: var(--green);
+    font-size: 1rem;
+}
+.contact{
+    padding: 80px 19% 70px;
+    background: var(--dblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+ .contact h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+ }
+ .contact p{
+    font-size: var(--p);
+    line-height: 30px;
+    margin-bottom: 20px;
+ }
+ .contact i{
+    height: 40px;
+    width: 40px;
+    background: var(#15F5BA);
+    color: var(--white);
+    border: 2px solid var(--green);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 9px;
+ }
+ .contact .sicons a i{
+    margin: 10px;
+ }
+ .contact .sicons a i:hover{
+    transform:translateY(5px) ;
+ }
+ .hobby, .home,.resume,.servicecontainer,.skills{
+    min-width: 300px;
+ }
+ @media screen and (max-width:1200px) {
+    .home{
+        min-height: 90vh;
+    }
+
+    :root{
+        --h1:5rem;
+        --h2:3.1rem;
+        --p:1rem;
+    }
+ }
+ @media screen and (max-width:600px) {
+    .home{
+        min-height: 80vh;
+    }
+
+    :root{
+        --h1:3,8rem;
+        --h2:2.7rem;
+        --p:15px;
+    }
+
+    .description h4{
+        font-size: 18px;
+        word-spacing: 10px;
+        margin-bottom: 30px;
+    }
+    .btn{
+        padding: 10px 35px;
+    }
+    .in i{
+        font-size: 60px;
+    }
+    .in h4{
+        font-size: 20px;
+    }
+ }
+ @media screen and (max-width:400px) {
+    :root{
+        --h1:3,5rem;
+        --h2:2.5rem;
+    }
+    .description h4{
+        font-size: 15px;
+        word-spacing: 6px;
+    }
+ }
+

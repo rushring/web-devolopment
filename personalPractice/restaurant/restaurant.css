@@ -1,0 +1,128 @@
+:root{
+    --yellow:#E6FF94;
+    --dyellow:#9DDE8B;
+    --green:#40A578;
+    --dgreen:#006769;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image:url(../media/photos/spice.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--yellow);
+}
+header a{
+    
+    text-decoration: none;
+    color:var(--dyellow);
+    min-width: 120px;
+}
+header h2 i{
+    margin-right: .5em;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #020e08;
+    
+
+    padding: 1em;
+    row-gap: 1em;
+    flex-wrap: wrap;
+
+}
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+    min-width: 260px;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: wheat;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+
+}
+.tagline1{
+    
+    color: var(--dgreen);
+    font-size: 2.5em;
+    font-weight: bolder;
+
+
+}
+.tagline2{
+    color: whitesmoke;
+}
+.maintext div{
+    margin-top: .2em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: #0c2406;
+    color: beige;
+    border: 1px solid var(--dyellow);
+
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    justify-content: center;
+    padding: .8em;
+    color: var(--dyellow);
+    background: linear-gradient(to right,rgb(79, 104, 79),rgb(56, 66, 56));
+}
+
+#menuheading,#localheading{
+    background: linear-gradient(to right,rgb(79, 104, 79),rgb(56, 66, 56));
+    font-size: 2.5em;
+    color: rgb(124, 2, 2);
+    display: flex;
+    justify-content: center;
+}
+.menu h3{
+    color: #3ee015;
+    font-size: 1.8em;
+}
+.menu div{
+    border: .1em solid black;
+    padding: .4em;
+}
+.locations{
+    background: linear-gradient(to right,rgb(79, 104, 79),rgb(56, 66, 56));
+    color: #9DDE8B;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.locations h2{
+    color: #0c2406;
+    margin-bottom: .8em;
+
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+}
