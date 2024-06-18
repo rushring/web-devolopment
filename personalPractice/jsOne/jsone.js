@@ -3,6 +3,9 @@ console.log("welcome to my page")
         to print in console, mostly used in debugging processes
 */
 
+//user input
+let name= prompt("what's your name");
+
 // alert("you are trying to print boom")
 
 //variables
