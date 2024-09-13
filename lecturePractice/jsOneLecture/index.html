@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+    <script  type="text/javascript">
+        function greetings(){
+            //show pop up messages
+            alert("Welcome buddy")
+        }
+        var x=2;
+        var y='rushani';
+        var n=true;
+        function printvalue(){
+            for(i=0;i<=10;i=i+2){
+                document.write('no '+i+'<br/>');
+                
+            }
+            document.write('<br/>')
+            while(x<9){
+                document.write('x value is '+x+'<br/>');
+                x++;
+            }
+        }
+        function show_confirm(){
+            //getting confirmation
+            
+            var flag=confirm('Are you aware of this action');
+
+            if(flag== true){
+                document.write('yoou confirmed this section');
+            }
+            else{
+                document.write('you ignored this section');
+            }
+            
+            //get user input
+
+            var given=prompt("please enter your name")
+  
+        }
+        var given=prompt("please enter your name","rock");
+
+    </script>
+</head>
+<body >
+    <!-- <script type="text/javascript">
+        document.write("<h1>Hello World</h1>");
+        document.write("<h2>Hello World</h2>");
+        document.write("<h3>Hello World</h3>");
+        document.write("<h4>Hello World</h4>");
+    </script> -->
+    <!-- <h1>Hello I think you saw a popup on the menu</h1> 
+      -->
+    <script  type="text/javascript">
+        document.write('Hi '+given);
+    </script>
+</body>
+</html>

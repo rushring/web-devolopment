@@ -1,0 +1,86 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.1;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Container for products and wishlist */
+.product, .Wishlist {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Form container */
+.pform {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Form sections */
+.pone, .ptwo, .pthree {
+    margin-bottom: 10px;
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: large;
+    font-weight: 600;
+}
+
+/* Select and button styling */
+select {
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pform {
+        flex-direction: column;
+    }
+    select, button {
+        width: 100%;
+    }
+}

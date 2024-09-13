@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var numArray= new Array(); // declare an array, grows as wish
+
+        //initialization of array
+
+        numArray[0]='A';
+        numArray[1]='B';
+        numArray[2]='C';
+
+        // define the length at declaration
+
+        var sArray = new Array(5);
+
+        sArray[0]='1'
+        sArray[1]='2'
+        sArray[2]='3'
+        sArray[3]='4'
+        sArray[4]='5'
+
+        // declarstion and initialization at same point
+
+        var tArray = new Array('232','34','45');
+
+        // another method
+
+        var rArray = ['r','u','s','h','a','n','i']
+        
+        document.write(rArray[5]+"<br/>");
+
+        //2d Array
+
+        var twoArray = [[1,2,3],[4,5,6]];
+
+        document.write(twoArray[0][1]+"<br/>");
+
+        //methods in arrays
+
+        // concat()
+        var conArray=sArray.concat(tArray); // combine two arrays
+
+        document.write(conArray + "<br/>")
+
+        // join() - returns an array as a string,does not change the original array,Any separator can be specified. The default is comma (,). array.join(separator)
+        
+
+        var name = rArray.join("....");
+        document.write(name + "<br/>");
+
+        // push() -  adds new items to the end of an array. changes the length of the array.returns the new length
+
+        var ful_name= rArray.push('s','i', 'v','a')
+
+        document.write(ful_name + "<br/>");
+        document.write(rArray + "<br/>");
+
+        // pop() -removes (pops) the last element of an array.changes the original array.returns the removed element.
+
+        var unwanted = rArray.pop();
+
+        document.write(unwanted + "<br/>");
+        document.write(rArray + "<br/>");
+
+
+        // reverse() - reverses the order of the elements in an array. overwrites the original array.
+
+        document.write(sArray + "<br/>");
+
+        var backNum =sArray.reverse();
+
+        document.write(sArray + "<br/>");
+
+        // shift() - removes the first item of an array.changes the original array.returns the shifted element.
+
+        document.write(tArray + "<br/>");
+
+        var removed = tArray.shift();
+
+        document.write(tArray + "<br/>");
+
+        document.write(removed + "<br/>");
+
+        // sort() - sorts the elements of an array.sorts the elements as strings in alphabetical and ascending order.overwrites the original array.
+
+        document.write(rArray + "<br/>");
+
+        var sortName = rArray.sort();
+        document.write(rArray + "<br/>");
+        document.write(sortName + "<br/>"); 
+
+        // toString()
+
+        //String object
+        var nameMy= new String("Rock");
+        var nameMine = "Rocky oooo";
+
+        //methods in String
+
+        // toLowerCase()
+        document.write(nameMy.toLowerCase() + "<br/>")
+
+        // toUpperCase()
+        document.write(nameMy.toUpperCase() + "<br/>")
+
+        // concat()
+        document.write(nameMy.concat(" is my pet") + "<br/>");
+
+        // charAt()
+
+        document.write(nameMy.charAt(3) + "<br/>");
+
+        // indexOf()
+        document.write(nameMine.indexOf("o") + "<br/>");
+        document.write(nameMine.indexOf("Ro") + "<br/>");
+        document.write(nameMine.indexOf("Rocky") + "<br/>");
+        document.write(nameMine.indexOf("ROCKY") + "<br/>");
+
+        // replace()
+        document.write(nameMine.replace("o","l") + "<br/>");
+
+        // replaceAll()
+        document.write(nameMine.replaceAll("o","l") + "<br/>");
+
+        // length()
+        document.write(nameMine.length + "<br/>");
+
+        //Math Object
+
+        var piVal= Math.PI
+        document.write(piVal + "<br/>")
+
+        var sqrtOf4 = Math.sqrt(4);
+        document.write(sqrtOf4  + "<br/>")
+
+        //constants
+        // Math.E
+        // Math.log
+        // Math.LN2
+        // Math.LN10
+        // Math.LOG2E
+        // Math.LOG2E
+
+        //methods
+        // sqrt()
+
+        // abs()
+        document.write(Math.abs(-100) +"<br/>")
+        document.write(Math.abs(100)+"<br/>")
+
+        // ceil()
+        document.write(Math.ceil(10.5678) +"<br/>")
+        document.write(Math.ceil(10.3308) +"<br/>")
+
+        // floor()
+        document.write(Math.floor(10.5678) +"<br/>")
+        document.write(Math.floor(10.3308) +"<br/>")
+
+        // log()
+        document.write(Math.log(10.5678) +"<br/>")
+        document.write(Math.log(10) +"<br/>")
+
+        // max()
+        document.write(Math.max(10.5678,11) +"<br/>")
+        document.write(Math.max(10.3308,1000) +"<br/>")
+
+        // min()
+        document.write(Math.min(10.5678,11) +"<br/>")
+        document.write(Math.min(10.3308,1) +"<br/>")
+
+        // pow()
+        document.write(Math.pow(12,3) +"<br/>")
+        // random()
+        // sin()
+        // cos()
+        // tan()
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish List of Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product">
+        <h2>Products</h2>
+    </div>
+    <div class="pform">
+        
+            <div class="pone">
+                <label for="shirtlist">Shirt</label>
+                <select name="" id="shirtlist">
+                    <option value="T-Shirt">T-Shirt</option>
+                    <option value="Dress Shirt">Dress Shirt</option>
+                    <option value="Polo Shirt">Polo Shirt</option>
+                    <option value="Henley Shirt">Henley Shirt</option>
+                    <option value="Oxford Shirt">Oxford Shirt</option>
+                    <option value="Chambray Shirt">chambray Shirt</option>
+                    <option value="Western Shirt">Western Shirt</option>
+                    <option value="Hawaiian Shirt">Hawaiian Shirt</option>
+                    <option value="Tunic Shirt">Tunic Shirt</option>
+                    <option value="Raglan Shirt">Raglan Shirt</option>
+                </select>
+                <button onclick="addtoList('1')">Add to Wishlist</button>
+            </div>
+            <div class="ptwo">
+                <label for="denimlist">Denim</label>
+                <select name="" id="denimlist">
+                    <option value="Raw Denim">Raw Denim</option>
+                    <option value="Selvedge Denim">Selvedge Denim</option>
+                    <option value="Stretch Denim">Stretch Denimt</option>
+                    <option value="Stonewashed Denim">Stonewashed Denim</option>
+                    <option value="Distressed Denim">Distressed Denim</option>
+                    <option value="Colored Denim">Colored Denim</option>
+                    <option value="Vintage Denim">Vintage Denim</option>
+                    <option value="Cropped Denim">Cropped Denim</option>
+                    <option value="Bootcut Denim">Bootcut Denim</option>
+                    <option value="Skinny Denim">Skinny Denim</option>
+                </select>
+                <button onclick="addtoList('2')">Add to Wishlist</button>
+            </div>
+            <div class="pthree">
+                <label for="shoelist">Shoe</label>
+                <select name="" id="shoelist">
+                    <option value="Sneakers">Sneakers</option>
+                    <option value="Loafers">Loafers</option>
+                    <option value="Derby Shoes">Derby Shoes</option>
+                    <option value="Brogues">Brogues</option>
+                    <option value="Monk Straps">Monk Straps</option>
+                    <option value="Ballet Flats">Ballet Flats</option>
+                    <option value="Sandals">Sandals</option>
+                    <option value="Boots">Boots</option>
+                    <option value="Moccasins">Moccasins</option>
+                    <option value="Slippers">Slippers</option>
+                </select>
+                <button onclick="addtoList('3')">Add to Wishlist</button>
+            </div>
+            
+        
+    </div>
+    <div class="Wishlist">
+        <h2>Wishlist</h2>
+    </div>
+    <div class="tform">
+        <div class="lpone">
+            <label for=""> Shirt</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Item</th>
+                        <th>Added on</th>
+                    </tr>
+                </thead>
+                <tbody id="shirtbody">
+
+                </tbody>
+            </table>
+        </div>
+    
+
+        <div class="lptwo">
+            <label for="">Denim</label>
+            <table >
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Item</th>
+                        <th>Added on</th>
+                    </tr>
+                </thead>
+                <tbody id="denimbody">
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="lpthree">
+            <label for="">Shoe</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Item</th>
+                        <th>Added on</th>
+                    </tr>
+                </thead>
+                <tbody id="shoebody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
