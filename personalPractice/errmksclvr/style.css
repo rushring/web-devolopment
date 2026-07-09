@@ -1,0 +1,27 @@
+div{
+    margin: 10pt 20pt;
+    padding: 10pt;
+    background-color: rgb(156, 186, 212);
+}
+h1{
+    margin: auto;
+    padding: 0pt 10pt;
+}
+#apple{
+    margin: 20pt 12pt;
+    
+padding: 2pt;
+background-color: rgb(255, 51, 0);
+}
+#orange{
+    margin: 20pt 12pt;
+    
+padding: 2pt;
+background-color: rgb(255, 153, 0);
+}
+#mango{
+    margin: 20pt 12pt;
+    
+padding: 2pt;
+background-color: rgb(217, 255, 0);
+}
